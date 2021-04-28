@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">    
+    <changeSet  author="liquibase"  id="02">
+        <insert tableName="user">
+            <column name="username" value="samuka"/>
+            <column name="password" value="$2a$16$9qr2tv0HmXbHBsx.TZFjfux742wCZM32a8Wi6iBqwIqaizlHPuxHS"/>
+            <column name="account_non_expired" valueBoolean="true"/>
+            <column name="account_non_locked" valueBoolean="true"/>
+            <column name="credentials_non_expired" valueBoolean="true"/>
+            <column name="enabled" valueBoolean="true"/>
+        </insert>
+
+    </changeSet>
+</databaseChangeLog>

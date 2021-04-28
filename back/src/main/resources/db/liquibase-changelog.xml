@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <include file="changelog/01-create-person.xml" relativeToChangelogFile="true"/>
+    
+    <include file="changelog/02-create-user.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/03-insert-user.xml" relativeToChangelogFile="true"/>
+    
+    <include file="changelog/04-create-permission.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/05-insert-permission.xml" relativeToChangelogFile="true"/>
+    
+    <include file="changelog/06-create-user-permission.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/07-insert-user-permission.xml" relativeToChangelogFile="true"/>
+        
+</databaseChangeLog>

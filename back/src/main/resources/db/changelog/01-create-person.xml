@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    <changeSet id="01" author="liquibase">
+
+        <createTable tableName="person" >
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(60)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="gender" type="VARCHAR(1)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="mail" type="VARCHAR(60)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="birth_date" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="naturalness" type="VARCHAR(60)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="nationality" type="VARCHAR(60)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="cpf" type="VARCHAR(14)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="registration_date" type="DATETIME">
+                <constraints nullable="false"/>
+            </column>
+            <column name="change_date" type="DATETIME">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
