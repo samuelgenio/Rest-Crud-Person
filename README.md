@@ -7,9 +7,11 @@ Cadastro de Pessoas com Spring,Mysql, React e Docker
 docker-compose up
 ```
 
-acessar url http://localhost:8080/contas
+Images:
 
-* Para executar Front
+* https://hub.docker.com/repository/docker/samuelgenio28/api-person-database
+* https://hub.docker.com/repository/docker/samuelgenio28/api-person-front
+* https://hub.docker.com/repository/docker/samuelgenio28/api-person-back
 
 ### App
 
@@ -21,9 +23,9 @@ admin123
 
 Você terá acesso a seguinte tela.
 
-![Tela principal](https://raw.githubusercontent.com/samuelgenio/Rest-Crud-Person/blob/main/imgs/img1.PNG)
+![Tela principal](https://raw.githubusercontent.com/samuelgenio/Rest-Crud-Person/main/imgs/img1.PNG)
 
-![Lista de pessoas](https://raw.githubusercontent.com/samuelgenio/Rest-Crud-Person/blob/main/imgs/img2.PNG)
+![Lista de pessoas](https://raw.githubusercontent.com/samuelgenio/Rest-Crud-Person/main/imgs/img2.PNG)
 
-![Adicionar/Editar pessoa](https://raw.githubusercontent.com/samuelgenio/Rest-Crud-Person/blob/main/imgs/img3.PNG)
+![Adicionar/Editar pessoa](https://raw.githubusercontent.com/samuelgenio/Rest-Crud-Person/main/imgs/img3.PNG)
 
