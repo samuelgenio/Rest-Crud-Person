@@ -2,9 +2,10 @@ version: '3.3'
   
 services:
   db:
-    image: mysql:5.7
+    image: samuelgenio28/api-person-database
     restart: always
-    container_name: mysql_api_person
+    container_name: api-person-database
+    build: ./database
     environment:
       MYSQL_DATABASE: ${MYSQL_DATABASE}
       MYSQL_USER: ${MYSQL_USER}
@@ -20,9 +21,9 @@ services:
       - api-person-network
 
   back:
-    image: samuelgenio28/back-api-person
+    image: samuelgenio28/api-person-back
     restart: always
-    container_name: back
+    container_name: api-person-back
     build: ./back
     working_dir: /back
     environment:
@@ -42,7 +43,8 @@ services:
     networks: 
       - api-person-network
   front:
-    container_name: front
+    image: samuelgenio28/api-person-front
+    container_name: api-person-front
     build: ./front
     working_dir: /front
     ports:
